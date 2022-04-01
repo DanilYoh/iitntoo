@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="stylesheet" href="/css/style.css">
 	<title>iintoo</title>
 </head>
@@ -39,21 +38,21 @@
 				<h2 class="form__header">What type of investor are you?</h2>
 				<p class="form__subheader">Select the type of investor you are below</p>
 				<div class="form__radiobattons radiobattons">
-					<div class="block">
-						<input type="radio" name="nameradio">
-						Individual
+					<div class="radio">
+						<input type="radio" name="nameradio" class="radio__input" id="1">
+						<label for="1" class="radio__label">Individual</label>
 					</div>
-					<div class="block">
-						<input type="radio" name="nameradio">
-						Business
+					<div class="radio">
+						<input type="radio" name="nameradio" class="radio__input" id="2">
+						<label for="2" class="radio__label">Business</label>			
 					</div>
-					<div class="block">
-						<input type="radio" name="nameradio">
-						IRA
+					<div class="radio">
+						<input type="radio" name="nameradio" class="radio__input" id="3">
+						<label for="3" class="radio__label">IRA</label>
 					</div>
-					<div class="block">
-						<input type="radio" name="nameradio">
-						Trust
+					<div class="radio">
+						<input type="radio" name="nameradio" class="radio__input" id="4">
+						<label for="4" class="radio__label">Trust</label>
 					</div>					
 				</div>
 				<div class="form__info">
@@ -62,12 +61,11 @@
 				<div class="form__for-input">
 					<div class="checkbox">
 						<input type="checkbox" name="namecheckbox">
-						I agree to the terms and receivning notifications from iintoo <a>Veiw full terms</a>
+						<label for="">I agree to the terms and receivning notifications from iintoo <a>Veiw full terms</a></label>
 					</div>
 				</div>
 				<button class="form__btn" type="submit">Create Account</button>
 			</form>
-
 		</div>
 	</div>
 </body>
