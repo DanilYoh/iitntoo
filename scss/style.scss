@@ -123,6 +123,10 @@ body {
 		justify-content: space-between;
 
 	}
+	.block {
+		display: flex;
+		justify-content: space-between;
+	}
 	&__link {
 		position: relative;
 		input  {			
