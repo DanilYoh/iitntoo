@@ -52,6 +52,9 @@ table {
   .container {
     max-width: 960px;
   }
+  .promo img:first-child {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 960px) {
@@ -127,20 +130,20 @@ body {
 }
 
 .promo {
-  width: 50%;
-  min-height: 630px;
-  background-image: url("/img/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
-.promo img {
-  width: 100px;
-  height: 50px;
+.promo img:first-child {
+  width: 600px;
+  height: 626px;
+}
+
+.promo img:last-child {
+  width: 90px;
+  height: 35px;
   position: absolute;
-  top: 10px;
-  left: 30px;
+  top: 20px;
+  left: 50px;
 }
 
 .wraper {
@@ -156,12 +159,14 @@ body {
   margin: 45px 0px 0 0px;
   background-color: white;
   padding: 40px;
+  height: 547px;
 }
 
 .wraper__header {
-  margin: 0px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
   font-weight: 500;
   font-size: 20px;
+  color: #2A4A5C;
 }
 
 .wraper__subheader {
@@ -188,21 +193,23 @@ body {
 .buttons__facebook {
   border: none;
   width: 215px;
+  height: 40px;
   background-color: #255A9B;
   color: #fff;
   font-weight: 400;
   text-align: start;
-  padding: 10px 0px;
+  font-size: 13px;
 }
 
 .buttons__linkedln {
   border: none;
   width: 215px;
+  height: 40px;
   background-color: #0076B6;
   color: #fff;
   font-weight: 400;
   text-align: start;
-  padding: 10px 0px;
+  font-size: 13px;
 }
 
 .buttons__facebook::before {
@@ -212,8 +219,8 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: url("/icon/facebook.svg") no-repeat center/contain;
 }
 
@@ -224,8 +231,8 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: url("/icon/linkedin.svg") no-repeat center/contain;
 }
 
@@ -259,7 +266,7 @@ body {
 }
 
 .form {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .form__radio {
@@ -289,13 +296,14 @@ body {
 
 .form__link input {
   width: 215px;
-  height: 50px;
+  height: 45px;
   border: 1px solid RGBA(169, 169, 169, 0.6);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 15px;
   font-weight: 200;
   padding: 20px 20px 0 10px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .form__link label {
@@ -304,9 +312,9 @@ body {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: 10px;
+  top: 4px;
   left: 1px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .form__link input:focus {
@@ -315,10 +323,12 @@ body {
 }
 
 .form__header {
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-top: 10px;
   margin: 30px 0px 10px 0px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
+  color: #2A4A5C;
 }
 
 .form__subheader {
@@ -327,7 +337,7 @@ body {
 }
 
 .form__radiobattons {
-  margin-top: 36px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,14 +348,15 @@ body {
 
 .form__info {
   margin-top: 20px;
-  width: 230px;
+  width: 180px;
   padding: 10px;
   -webkit-box-shadow: 0px 1px 9px grey;
           box-shadow: 0px 1px 9px grey;
 }
 
 .form__info p {
-  font-size: 13px;
+  font-size: 10px;
+  font-weight: 100px;
   color: #7B8A92;
 }
 
@@ -394,6 +405,7 @@ body {
 
 .radio__label {
   padding-left: 22px;
+  font-size: 14px;
 }
 
 .radio__label::before {
@@ -404,7 +416,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 50%;
   position: absolute;
-  top: -1px;
+  top: 0px;
   left: 0;
   -webkit-transition: border .1s linear;
   transition: border .1s linear;
@@ -412,6 +424,6 @@ body {
 
 .radio__input:checked + .radio__label::before {
   border: 3px solid #3698FB;
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
 }

@@ -1,7 +1,14 @@
 @media (max-width: 1170px) {
 	.container {
 		max-width: 960px;
+
 	}
+	.promo {
+		img:first-child {
+			width: 100% !important;
+		}
+	}
+	
 }
 @media (max-width: 960px) {
 	.container {

@@ -17,18 +17,18 @@ body {
 	align-items: center;
 }
 .promo {
-	width: 50%;
-	min-height: 630px;
-	background-image: url('/img/bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+
 	position: relative;
-	img {
-		width: 100px;
-		height: 50px;
+	img:first-child {
+		width: 600px;
+		height: 626px;
+	}
+	img:last-child {
+		width: 90px;
+		height: 35px;
 		position: absolute;
-		top: 10px;
-		left: 30px;
+		top: 20px;
+		left: 50px;
 	}
 }
 
@@ -39,10 +39,12 @@ body {
 	margin: 45px 0px 0 0px; 
 	background-color: white;
 	padding: 40px;
+	height: 547px;
 	&__header {
-		margin: 0px 0px 10px 0px;
+		margin: 30px 0px 10px 0px;
 		font-weight: 500;
 		font-size: 20px;
+		color: #2A4A5C;
 	}
 	&__subheader {
 		font-size: 15px;
@@ -61,28 +63,30 @@ body {
 	&__facebook {
 		border: none;
     width: 215px;
+		height: 40px;
     background-color: #255A9B;
     color: #fff;
     font-weight: 400;
     text-align: start;
-		padding: 10px 0px;
+		font-size: 13px;
 	}
 	&__linkedln {
 		border: none;
     width: 215px;
+		height: 40px;
     background-color: #0076B6;
     color: #fff;
     font-weight: 400;
 		text-align: start;
-		padding: 10px 0px;
+		font-size: 13px;
 	}
 	&__facebook::before {
 		content: "";
 		margin: 0 15px;
 		display: inline-flex;
 		vertical-align: middle;
-		width: 20px;
-		height: 20px;
+		width: 15px;
+		height: 15px;
 		background: url('/icon/facebook.svg') no-repeat center / contain;
 	}
 	&__linkedln::before {
@@ -90,8 +94,8 @@ body {
 		margin: 0 15px;
 		display: inline-flex;
 		vertical-align: middle;
-		width: 20px;
-		height: 20px;
+		width: 15px;
+		height: 15px;
 		background: url('/icon/linkedin.svg') no-repeat center / contain;
 	}
 }
@@ -116,7 +120,7 @@ body {
 	}
 }
 .form {
-	margin-top: 30px;
+	margin-top: 20px;
 	&__radio {
 		display: flex;
 		align-items: center;
@@ -131,21 +135,22 @@ body {
 		position: relative;
 		input  {			
 			width: 215px;
-			height: 50px;
+			height: 45px;
 			border: 1px solid RGBA( 169, 169, 169, 0.6 );
 			box-sizing: border-box;
-			font-size: 15px;
 			font-weight: 200;
 			padding: 20px 20px 0 10px;
+			font-size: 13px;
+			line-height: 20px;
 		}
 		label {
 			padding: 0 10px;
 			color: #2A4A5C;
 			position: absolute;
 			box-sizing: border-box;
-			top: 10px;
+			top: 4px;
 			left: 1px;
-			font-size: 14px;
+			font-size: 13px;
 		}
 		input:focus {
 			outline: 0;
@@ -154,27 +159,30 @@ body {
 	}
 
 	&__header {
-		margin-top: 50px;
+		margin-top: 100px;
+		padding-top: 10px;
 		margin: 30px 0px 10px 0px;
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 15px;
+		color: #2A4A5C;
 	}
 	&__subheader {
 		font-size: 13px;
 		color: #7B8A92;
 	}
 	&__radiobattons {
-		margin-top: 36px;
+		margin-top: 20px;
 		display: flex;
 		justify-content: space-between;
 	}
 	&__info {
 		margin-top: 20px;
-		width: 230px;
+		width: 180px;
 		padding: 10px;
 		box-shadow: 0px 1px 9px grey;
 		p {
-			font-size: 13px;
+			font-size: 10px;
+			font-weight: 100px;
 			color: #7B8A92;
 		}
 	}
@@ -216,6 +224,7 @@ body {
 	}
 	&__label {
 		padding-left: 22px;
+		font-size: 14px;
 	}
 	&__label::before {
 		content: "";
@@ -225,15 +234,15 @@ body {
 		border: 1px solid #ccc;
 		border-radius: 50%;
 		position: absolute;
-		top: -1px;
+		top: 0px;
 		left: 0;
 		transition: border .1s linear;
 	}
 }
 .radio__input:checked + .radio__label::before {
 	border: 3px solid #3698FB;
-	width: 11px;
-	height: 11px;
+	width: 9px;
+	height: 9px;
 }
 
 
