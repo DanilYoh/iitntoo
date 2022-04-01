@@ -1,0 +1,42 @@
+@media (max-width: 1170px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (max-width: 960px) {
+	.container {
+		max-width: 768px;
+	}
+	.promo {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 590px;
+	}
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+	.block {
+		flex-direction: column;
+	}
+	input {
+		margin-top: 5px;
+	}
+	button {
+		margin-top: 5px;
+	}	
+}
+@media (max-width: 590px) {
+	.container {
+		max-width: 452px;
+	}
+	.radiobattons {
+		flex-direction: column;
+	}
+	.block {
+		margin-top: 10px;
+	}
+}
